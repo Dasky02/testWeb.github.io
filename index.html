@@ -61,9 +61,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            /* Zarovnání obsahu nahoře */
             align-items: center;
-            /* Horizontální vycentrování */
             text-align: center;
             padding: 20px;
             position: relative;
@@ -103,8 +101,8 @@
         }
 
         .image-section img {
-            max-height: 450px;
-            width: auto;
+            max-height: 300px;
+            max-width: 100%;
             object-fit: contain;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -177,6 +175,7 @@
 
             .image-section img {
                 max-height: 200px;
+                object-fit: contain;
             }
 
             .image-section p {
@@ -231,7 +230,6 @@
             <img src="gauc.png" alt="Interiér chaty">
             <p>Stylový interiér s přírodními materiály a útulnou atmosférou pro váš komfort.</p>
         </div>
-
 
         <div class="image-section">
             <img src="interier.png" alt="Ložnice v chatě">
