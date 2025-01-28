@@ -269,33 +269,33 @@
             document.body.classList.add('dark-mode');
         }
 
-        // Scroll animace pouze směrem dolů
-        let lastScrollY = 0;
-        const hero = document.getElementById('hero');
-        const mainContent = document.getElementById('main-content');
+        // Scroll animace pouze směrem dolů (zrychlená na mobilních zařízeních)
+        // let lastScrollY = 0;
+        // const hero = document.getElementById('hero');
+        // const mainContent = document.getElementById('main-content');
 
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-            const heroHeight = hero.offsetHeight;
+        // window.addEventListener('scroll', () => {
+        //     const currentScrollY = window.scrollY;
+        //     const heroHeight = hero.offsetHeight;
+        //     const isMobile = window.innerWidth < 768;
 
-            if (currentScrollY > lastScrollY && currentScrollY > heroHeight * 0.2 && currentScrollY < mainContent.offsetTop) {
-                mainContent.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+        //     if (currentScrollY > lastScrollY && currentScrollY > heroHeight * 0.2 && currentScrollY < mainContent.offsetTop) {
+        //         if (isMobile) {
+        //             mainContent.scrollInto
+        //             mainContent.scrollIntoView({
+        //                 behavior: 'auto', // Zrychlená animace pro mobilní zařízení
+        //                 block: 'start'
+        //             });
+        //         } else {
+        //             mainContent.scrollIntoView({
+        //                 behavior: 'smooth', // Hladká animace pro větší zařízení
+        //                 block: 'start'
+        //             });
+        //         }
+        //     }
 
-            lastScrollY = currentScrollY;
-        });
-
-        // Responzivní menu
-        window.addEventListener('resize', () => {
-            if (window.innerWidth < 768) {
-                document.querySelector('.rezervace-btn').textContent = 'Rezervujte ➔';
-            } else {
-                document.querySelector('.rezervace-btn').textContent = 'Rezervujte svůj únik ➔';
-            }
-        });
+        //     lastScrollY = currentScrollY;
+        // });
     </script>
 </body>
 
